@@ -1,0 +1,44 @@
+/* aqui estilizei a parte que falo sobre mim e ajustando o responsivo */
+
+.sobremim {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.sobremim-titulo {
+  color: #fff;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.sobremim-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  color: #ececec;
+}
+
+@media (max-width: 800px) {
+  .sobremim {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+
+  .sobremim .sobremim-titulo {
+    color: #ffffff;
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: 40ch;
+    
+  }
+  .sobremim-texto {
+    font-size: 1.25rem;
+  }
+}
